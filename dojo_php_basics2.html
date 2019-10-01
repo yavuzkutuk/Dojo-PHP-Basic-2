@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Révisions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="pt-5">
+
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#"><i class="fab fa-php"></i> PHP basics</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#start">Démarrage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#loop">Boucle</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#condition">Conditions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#arrayNum">Tableaux indexés</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#arrayAsso">Tableaux associatifs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron d-flex align-items-center justify-content-center jumbotron-sw">
+        <h1 class="text-light"><i class="fab fa-lg fa-php"></i> Basics 2</h1>
+    </div>
+</header>
+
+<main class="container">
+    <section>
+        <h2 class="pt-2" id="start"><i class="fas fa-play"></i> Démarrage</h2>
+        <ol>
+            <li>reprends le fichier <i>index.php</i></li>
+            <li>démarre un serveur HTTP sur le dossier <i>revisions</i></li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 class="pt-2" id="loop"><i class="fas fa-undo"></i> Boucle for</h2>
+        <ol>
+            <li>afficher de 0 à 9 inclus via une boucle</li>
+            <li>afficher de 0 à 10 inclus via une boucle</li>
+            <li>afficher de 1 à 10 inclus via une boucle</li>
+            <li>afficher de 10 à 0 inclus via une boucle</li>
+            <li>afficher de 25 à 50 inclus, tous les 5</li>
+            <li>afficher les valeurs possibles entre 10 à -10, tous les 3</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 class="pt-2" id="condition"><i class="fas fa-question"></i> Conditions</h2>
+
+        <p>Soit <code>$name = 'Darth Vader';</code></p>
+        <ol>
+            <li>test si $name égal "Darth Vader" ou "Darth Sidious", affiche "Sith"</li>
+            <li>sinon si $name égal "Yoda", affiche "Jedi"</li>
+            <li>sinon affiche "sans doute une personne sans pouvoir"</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 class="pt-2" id="arrayNum"><i class="fas fa-list"></i> Tableau indexé</h2>
+
+        <p>Soit les valeurs : <code>'Yoda', 'Obi-Wan Kenobi', 'Luke Skywalker', 'Windu', 'Qui-gon Jinn'</code>
+        </p>
+        <ol>
+            <li>Construire un tableau <code>$jedis</code> (indexé numériquement)</li>
+            <li>Ajouter 'Rey' dans le tableau</li>
+            <li>Afficher le plus expérimenté uniquement</li>
+            <li>Boucler pour afficher tous les jedis</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2 class="pt-2" id="arrayAsso"><i class="fas fa-table"></i> Tableau associatif</h2>
+        <p>Créer un tableau en tableau associatif avec le nom en clé et l'age en valeur :</p>
+        <ul>
+            <li><strong>Yoda</strong> 900</li>
+            <li><strong>Leia</strong> 19</li>
+            <li><strong>Luke Skywalker</strong> 19</li>
+            <li><strong>Darth Vader</strong> 46</li>
+            <li><strong>Chewbacca</strong> 200</li>
+        </ul>
+
+        <ol>
+            <li>Ajouter Han Solo, 29ans au tableau</li>
+            <li>Classer le tableau du plus jeune au plus vieux, puis afficher les noms et ages dans une liste HTML</li>
+            <li>Afficher les noms et ages des personnages par ordre alphabétique dans une liste HTML</li>
+            <li>Afficher uniquement les personnages ayant plus de 100ans (afficher leur age)</li>
+        </ol>
+
+        <p>Soit les personnages :</p>
+        <ul>
+            <li>Jedi : Luke Skywalker, Yoda, Windu</li>
+            <li>Sith: Darth Vader, Darth Maul, Dooku</li>
+            <li>Gungan : Jar Jar Binks</li>
+            <li>Human : Han Solo, Leia</li>
+        </ul>
+
+        <p>Créé un tableau associatif avec le nom des races en clé, et en valeur, un tableau de personnages de cette race</p>
+        <ol>
+            <li>Boucler sur le tableau afin d'afficher les noms de race dans une balise h2, suivi d'une liste pour les noms de cette race</li>
+            <li>Boucler sur le tableau pour afficher dans une liste, la race et le nombre de personnages de cette race</li>
+        </ol>
+    </section>
+
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+

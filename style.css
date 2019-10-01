@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Varela+Round');
+
+@font-face {
+    font-family: starjedi;
+    src: url("font/Starjedi.cc3019aa.ttf");
+}
+
+@font-face {
+    font-family: starjout;
+    src: url("font/Starjout.f72f509a.ttf");
+}
+
+:root {
+    --wcs-color:#000000;
+    --secondary-color: #EC180A;
+    --sw-text: #FFE919;
+}
+
+.navbar {
+    background-color: var(--wcs-color);
+    font-family: starjedi;
+}
+
+.navbar a {
+    color:var(--sw-text);
+}
+
+.navbar a:hover {
+    text-shadow:1px 1px 1px var(--secondary-color);
+}
+
+section {
+    font-size: 16pt;
+    font-family: 'Raleway', sans-serif;
+    border-bottom: 1px solid var(--secondary-color);
+    padding: 1em;
+}
+
+h1 {
+    font-family: starjedi;
+}
+
+h2 {
+    color:var(--wcs-color);
+    font-family: starjout;
+}
+
+.jumbotron {
+    background-image:url("https://bplusmovieblog.files.wordpress.com/2013/06/the-lord-of-the-rings-the-two-towers-1629.png");
+    background-size:cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height:450px;
+}
+
+.jumbotron-sw {
+    background-image:url("img/Vader.jpeg");
+}
